@@ -1,3 +1,4 @@
+__import__("picture.py")
 from tkinter import *
 
 gui = Tk()
