@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13e8b89b-f9d6-4c70-ab85-17ca18c241be" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Interface.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Interface.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com/ecetech/b2/gui/interface_eleves/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/com/ecetech/b2/gui/interface_eleves/import_picture.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/com/ecetech/b2/gui/interface_eleves/bio_eleves.py" beforeDir="false" afterPath="$PROJECT_DIR$/com/ecetech/b2/gui/interface_eleves/bio_eleves.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com/ecetech/b2/gui/test/test_gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/com/ecetech/b2/gui/test/test_gui.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/random_image.png" beforeDir="false" afterPath="$PROJECT_DIR$/com/ecetech/b2/gui/interface_eleves/random_image.png" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -147,8 +140,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.bio_eleves" />
-        <item itemvalue="Python.__init__ (1)" />
         <item itemvalue="Python.import_picture" />
+        <item itemvalue="Python.__init__ (1)" />
         <item itemvalue="Python.__init__" />
       </list>
     </recent_temporary>
@@ -168,5 +161,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="mise à niveau" />
+    <option name="LAST_COMMIT_MESSAGE" value="mise à niveau" />
   </component>
 </project>
