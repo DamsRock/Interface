@@ -6,7 +6,6 @@ def image():
     canvas = Canvas(gui, width=750, height=500)
     canvas.create_image(0, 0, anchor=NW, image=photo)
     canvas.pack()
-
     gui.mainloop()
 
 gui = Tk()
