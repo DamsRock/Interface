@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13e8b89b-f9d6-4c70-ab85-17ca18c241be" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/com/ecetech/b2/gui/Connection.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/ecetech/b2/gui/test/lion....gif" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/ecetech/b2/gui/Connection.py" beforeDir="false" afterPath="$PROJECT_DIR$/com/ecetech/b2/gui/Connection.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/com/ecetech/b2/gui/interface_eleves/bio_eleves.py" beforeDir="false" afterPath="$PROJECT_DIR$/com/ecetech/b2/gui/interface_eleves/bio_eleves.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com/ecetech/b2/gui/test/affichage_photo.py" beforeDir="false" afterPath="$PROJECT_DIR$/com/ecetech/b2/gui/test/affichage_photo.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +54,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Connection">
+  <component name="RunManager" selected="Python.bio_eleves">
     <configuration name="Connection" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Interface" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -164,9 +162,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.bio_eleves" />
         <item itemvalue="Python.Connection" />
         <item itemvalue="Python.affichage_photo" />
-        <item itemvalue="Python.bio_eleves" />
         <item itemvalue="Python.import_picture" />
         <item itemvalue="Python.__init__ (1)" />
       </list>
