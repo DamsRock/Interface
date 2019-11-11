@@ -1,6 +1,5 @@
 from tkinter import *
 
-
 def image():
     photo = PhotoImage(file="random_image.png")
     canvas = Canvas(gui, width=750, height=500)

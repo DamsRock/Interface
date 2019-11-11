@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13e8b89b-f9d6-4c70-ab85-17ca18c241be" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/com/ecetech/b2/gui/test/affichage_photo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/com/ecetech/b2/gui/Connection.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/com/ecetech/b2/gui/test/lion....gif" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com/ecetech/b2/gui/interface_eleves/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/com/ecetech/b2/gui/interface_eleves/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/com/ecetech/b2/gui/interface_eleves/bio_eleves.py" beforeDir="false" afterPath="$PROJECT_DIR$/com/ecetech/b2/gui/interface_eleves/bio_eleves.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/ecetech/b2/gui/test/affichage_photo.py" beforeDir="false" afterPath="$PROJECT_DIR$/com/ecetech/b2/gui/test/affichage_photo.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,12 +33,12 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$/Miniconda3/pkgs/conda-4.7.12-py37_0/Scripts/conda.exe" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\damie\Documents\travail\Interface\com\ecetech\b2\gui\interface_eleves" />
       <recent name="C:\Users\damie\Documents\travail\Interface\com\ecetech\b2\gui" />
+      <recent name="C:\Users\damie\Documents\travail\Interface\com\ecetech\b2\gui\interface_eleves" />
       <recent name="C:\Users\damie\Documents\travail\Interface\com\ecetech\b2\test" />
       <recent name="C:\Users\damie\Documents\travail\Interface\com\ecetech\b2\interface_eleves" />
       <recent name="C:\Users\damie\Documents\travail\Interface\Docs" />
@@ -55,7 +56,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.bio_eleves">
+  <component name="RunManager" selected="Python.Connection">
+    <configuration name="Connection" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Interface" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/com/ecetech/b2/gui" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/com/ecetech/b2/gui/Connection.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="__init__ (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Interface" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -69,27 +91,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/com/ecetech/b2/gui/interface_eleves/__init__.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Interface" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Miniconda3/envs/Interface/Lib/tkinter" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$USER_HOME$/Miniconda3/envs/Interface/Lib/tkinter/__init__.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -163,11 +164,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.bio_eleves" />
+        <item itemvalue="Python.Connection" />
         <item itemvalue="Python.affichage_photo" />
+        <item itemvalue="Python.bio_eleves" />
         <item itemvalue="Python.import_picture" />
         <item itemvalue="Python.__init__ (1)" />
-        <item itemvalue="Python.__init__" />
       </list>
     </recent_temporary>
   </component>
@@ -188,6 +189,8 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="mise à niveau" />
     <option name="LAST_COMMIT_MESSAGE" value="mise à niveau" />
