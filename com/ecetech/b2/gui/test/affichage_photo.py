@@ -2,15 +2,20 @@ from tkinter import *
 from functools import partial
 
 
+
+
 def update_label(label, stringvar):
+
     text = stringvar.get()
     label.config(text=text)
 
 
-def image():
+
+
+def image ():
     photo = PhotoImage(file="lion....gif")
 
-    canvas = Canvas(root, width=750, height=500)
+    canvas = Canvas(root,width=750, height=500)
     canvas.create_image(0, 0, anchor=NW, image=photo)
     canvas.pack()
     root.mainloop()
