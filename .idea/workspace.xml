@@ -25,11 +25,14 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Miniconda3/pkgs/conda-4.7.12-py37_0/Scripts/conda.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/com/ecetech/b2/gui/test" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\damie\Documents\travail\Interface\com\ecetech\b2\gui\test" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\damie\Documents\travail\Interface\com\ecetech\b2\gui" />
       <recent name="C:\Users\damie\Documents\travail\Interface\com\ecetech\b2\gui\interface_eleves" />
@@ -50,7 +53,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Connection">
+  <component name="RunManager" selected="Python.projet_ridene_tkinter">
     <configuration name="Connection" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Interface" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -114,7 +117,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="import_picture" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="projet_ridene_tkinter" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Interface" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -122,11 +125,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/com/ecetech/b2/gui/interface_eleves" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/com/ecetech/b2/gui/test" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/com/ecetech/b2/gui/interface_eleves/import_picture.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/com/ecetech/b2/gui/test/projet_ridene_tkinter.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -135,7 +138,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="picture" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="t" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Interface" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -143,11 +146,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/com/ecetech/b2/gui/interface_eleves" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/com/ecetech/b2/gui/test" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/com/ecetech/b2/gui/interface_eleves/picture.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/com/ecetech/b2/gui/test/t.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -158,11 +161,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Connection" />
+        <item itemvalue="Python.projet_ridene_tkinter" />
         <item itemvalue="Python.affichage_photo" />
+        <item itemvalue="Python.t" />
+        <item itemvalue="Python.Connection" />
         <item itemvalue="Python.bio_eleves" />
-        <item itemvalue="Python.picture" />
-        <item itemvalue="Python.import_picture" />
       </list>
     </recent_temporary>
   </component>
