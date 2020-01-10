@@ -4,10 +4,10 @@ from tkinter import *
 def image():
     photo = PhotoImage(file="random_image.png") # l'importation de la photo photo ce fait ici
     profil = PhotoImage(file="IMAG0753png.png")
-    canvas = Canvas(gui, width=2222, height=2666)
+    canvas = Canvas(gui, width=1080, height=1100)
     #canvas.create_image(0, 0, anchor=NW, image=photo)
     canvas.create_image(0, 0, anchor=NW, image=profil)
-    canvas.grid(column=2, row=0)
+    canvas.grid(column=0, row=0)
     canvas.pack()
     canvas.pack()
     gui.mainloop()
@@ -17,7 +17,7 @@ gui.geometry("700x700")
 gui.title("Biographique")
 gui.iconphoto(image())
 champ = Label(gui, text="Lorem ipsum dolor sit amet")###, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.")
-champ.grid(column=0, row=0)
+champ.grid(column=0, row=1)
 gui.pack(champ)
 
 gui.mainloop()
