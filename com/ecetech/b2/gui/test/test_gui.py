@@ -1,62 +1,111 @@
-from tkinter import *
+import tkinter as tk
+from tkinter import ttk as tktw
 
 
-class Calculator:
-
-    def __init__(self, master):
-        self.master = master
-        master.title("Calculator")
-
-        self.total = 0
-        self.entered_number = 0
-
-        self.total_label_text = IntVar()
-        self.total_label_text.set(self.total)
-        self.total_label = Label(master, textvariable=self.total_label_text)
-
-        self.label = Label(master, text="Total:")
-
-        vcmd = master.register(self.validate)  # we have to wrap the command
-        self.entry = Entry(master, validate="key", validatecommand=(vcmd, '%P'))
-
-        self.add_button = Button(master, text="+", command=lambda: self.update("add"))
-        self.subtract_button = Button(master, text="-", command=lambda: self.update("subtract"))
-        self.reset_button = Button(master, text="Reset", command=lambda: self.update("reset"))
-
-        # LAYOUT
-
-        self.label.grid(row=0, column=0, sticky=W)
-        self.total_label.grid(row=0, column=1, columnspan=2, sticky=E)
-
-        self.entry.grid(row=1, column=0, columnspan=3, sticky=W + E)
-
-        self.add_button.grid(row=2, column=0)
-        self.subtract_button.grid(row=2, column=1)
-        self.reset_button.grid(row=2, column=2, sticky=W + E)
-
-    def validate(self, new_text):
-        if not new_text:  # the field is being cleared
-            self.entered_number = 0
-            return True
-
-        try:
-            self.entered_number = int(new_text)
-            return True
-        except ValueError:
-            return False
-
-    def update(self, method):
-        if method == "add":
-            self.total += self.entered_number
-        elif method == "subtract":
-            self.total -= self.entered_number
-        else:  # reset
-            self.total = 0
-
-        self.total_label_text.set(self.total)
-        self.entry.delete(0, END)
+class Window(tk.Tk):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.geometry("640x480")
+        self.minsize(width=640, height=480)
+        self.fm = FrameMain(self, background="pink")
+        self.fb = FrameBottom(self, background="lightblue")
+        self.fl = FrameLeft(self.fm, background="yellow")
+        self.fr = FrameRight(self.fm, background="green")
+        self.fa = FrameAction(self.fr, background="orange")
+        self.fc = FrameChat(self.fr, background="blue")
+        self.tm = TopMenu(self)
+        self.config(menu=self.tm)
+        # self.ab = ActionBar(self.fa, width=0, height=0)
+        # self.ai = ActionInfo(self.ab, width=0, height=0)
+        # self.ab.add(self.ai, text="Info", state="normal")
+        self.c = CanvasArea(self.fl, width=0, height=0)
 
 
-root = Tk()
-my_gui = Calculator(root)
-root.mainloop()
+class FrameMain(tk.Frame):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.pack(fill=tk.BOTH, expand=1)
+
+
+class FrameLeft(tk.Frame):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.pack(fill=tk.BOTH, expand=1, side="left")
+
+
+class CanvasArea(tk.Canvas):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.pack(fill=tk.BOTH, expand=1)
+
+
+class FrameRight(tk.Frame):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.pack(fill=tk.BOTH, expand=1, side="right")
+
+
+class FrameChat(tk.Frame):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.pack(fill=tk.BOTH, expand=1, side="bottom")
+
+
+class FrameAction(tk.Frame):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.pack(fill=tk.BOTH, expand=1, side="top")
+
+
+class ActionBar(tktw.Notebook):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.pack(expand=1, fill=tk.BOTH)
+
+
+class ActionInfo(tk.Frame):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.pack(fill=tk.BOTH, expand=1)
+
+
+class FrameBottom(tk.Frame):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.pack(fill=tk.BOTH)
+        self.cb = ComboboxCommands(self, width=10, state="readonly")
+        self.cl = CommandLine(self, relief="ridge", bd=2)
+        self.bs = ButtonSend(self, text="Send", relief="ridge")
+
+
+class ComboboxCommands(tktw.Combobox):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.pack(side="left", fill=tk.BOTH)
+
+
+class CommandLine(tk.Entry):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.pack(side="left", fill=tk.BOTH, expand=1)
+
+
+class ButtonSend(tk.Button):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.pack(side="right")
+
+
+class TopMenu(tk.Menu):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.add_cascade(label="Menu")
+
+
+if __name__ == "__main__":
+    w = Window()
+
+    imgsrc = tk.PhotoImage(file="lion....gif")
+    img = w.c.create_image(0, 0, anchor="nw", image=imgsrc)
+
+    w.mainloop()

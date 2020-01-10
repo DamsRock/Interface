@@ -4,9 +4,8 @@ from tkinter import *
 def image():
     photo = PhotoImage(file="random_image.png") # l'importation de la photo photo ce fait ici
     profil = PhotoImage(file="IMAG0753png.png")
-    canvas = Canvas(gui, width=700, height=500)
-    canvas.create_image(0, 0, anchor=NW, image=photo)
-    canvas.grid(column=1, row=0)
+    canvas = Canvas(gui, width=2222, height=2666)
+    #canvas.create_image(0, 0, anchor=NW, image=photo)
     canvas.create_image(0, 0, anchor=NW, image=profil)
     canvas.grid(column=2, row=0)
     canvas.pack()
