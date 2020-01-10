@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13e8b89b-f9d6-4c70-ab85-17ca18c241be" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,6 +21,11 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -30,30 +34,18 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\damie\Documents\travail\Interface\com\ecetech\b2\gui\test" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\damie\Documents\travail\Interface\com\ecetech\b2\gui" />
       <recent name="C:\Users\damie\Documents\travail\Interface\com\ecetech\b2\gui\interface_eleves" />
+      <recent name="C:\Users\damie\Documents\travail\Interface\com\ecetech\b2\gui" />
       <recent name="C:\Users\damie\Documents\travail\Interface\com\ecetech\b2\test" />
       <recent name="C:\Users\damie\Documents\travail\Interface\com\ecetech\b2\interface_eleves" />
       <recent name="C:\Users\damie\Documents\travail\Interface\Docs" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\damie\Documents\travail\Interface\com\ecetech\b2\gui\test" />
+    </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Python.projet_ridene_tkinter">
+  <component name="RunManager" selected="Python.bio_eleves">
     <configuration name="Connection" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Interface" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -161,13 +153,25 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.bio_eleves" />
+        <item itemvalue="Python.Connection" />
         <item itemvalue="Python.projet_ridene_tkinter" />
         <item itemvalue="Python.affichage_photo" />
         <item itemvalue="Python.t" />
-        <item itemvalue="Python.Connection" />
-        <item itemvalue="Python.bio_eleves" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -191,5 +195,23 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="mise à niveau" />
     <option name="LAST_COMMIT_MESSAGE" value="mise à niveau" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="936" height="219" key="GridCell.Tab.0.bottom" timestamp="1578646759365">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="936" height="219" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1578646759365" />
+    <state width="936" height="219" key="GridCell.Tab.0.center" timestamp="1578646759365">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="936" height="219" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1578646759365" />
+    <state width="936" height="219" key="GridCell.Tab.0.left" timestamp="1578646759365">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="936" height="219" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1578646759365" />
+    <state width="936" height="219" key="GridCell.Tab.0.right" timestamp="1578646759365">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="936" height="219" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1578646759365" />
   </component>
 </project>
