@@ -1,49 +1,52 @@
 from tkinter import *
+from lxml import *
 
-#Création de la fenêtre principale
+# Création de la fenêtre principale
 root = Tk()
 root.title('Bulletin')
-root.geometry('600x150')
+root.geometry('850x150')
 
-#Création et remplissage des différentes catégories
-cell1 = Text(root, height=1, width=15)
-cell1.insert(INSERT, 'Matières')
-cell1.pack()
-cell1.grid(row=0, column=0)
-cell2 = Text(root, height=1, width=5)
-cell2.insert(INSERT, 'Coeff')
-cell2.grid(row=0, column=1)
-cell3 = Text(root, height=1, width=13)
-cell3.insert(INSERT, 'Moyenne élève')
-cell3.grid(row=0, column=2)
-cell4 = Text(root, height=1, width=14)
-cell4.insert(INSERT, 'Moyenne Classe')
-cell4.grid(row=0, column=3)
 
-#Séparation des module
-def separation():
-    ligne = Text(root,height=1, width=150)
-    ligne.pack()
+# Fonction de Séparation des modules
+def separation(r, c, h, w):
+    ligne = Text(root, height=h, width=w)
+    ligne.configure({"background": "black"})
+    ligne.grid(row=r, column=c)
 
-separation().grid(row=1,column=0)
-separation().grid(row=1,column=1)
-separation().grid(row=1,column=2)
-separation().grid(row=1,column=3)
-separation().grid(row=1,column=4)
+# Fonction création entré
+def entre(r, c, h, w, nom):
+    champ = Text(root, height=h, width=w)
+    champ.insert(INSERT, nom)
+    champ.grid(row=r, column=c)
 
-#Création et remplissage des chmaps
-matiere1 = Text(root, height=1, width=23)
-matiere1.insert(INSERT, 'Mathématiques appliqués')
-matiere1.grid(row=2, column=0)
-matiere2 = Text(root, height=1, width=23)
-matiere2.insert(INSERT, 'Physique appliquée')
-matiere2.grid(row=3, column=0)
-matiere3 = Text(root, height=1, width=23)
-matiere3.insert(INSERT, 'Projet technologique')
-matiere3.grid(row=4, column=0)
 
-coeff = Text(root, height=1, width=5)
-coeff.insert(INSERT, 2)
-coeff.grid(row=2, column=1)
+cmw = 23  # largeur champs matières
+ccw = 5  # largeur champs coeff
+cmew = 13  # largeur champs moyenne eleves
+cmcw = 14  # largeur champs moyenne classe
+cvmw = 17  # largeur champs validation module
+crw = 10  # largeur champs rattrapage
+cECTSw = 4  # largeur champs ECTS
+
+# Création et remplissage des différentes catégories
+entre(0, 0, 1, cmw, 'Matières')
+entre(0, 1, 1, ccw, 'Coeff')
+entre(0, 2, 1, cmew, 'Moyenne élèves')
+entre(0, 3, 1, cmcw, 'Moyenne classe')
+entre(0, 4, 1, cvmw, 'Validation module')
+entre(0, 5, 1, crw, 'Rattrapage')
+entre(0, 6, 1, cECTSw, 'ECTS')
+
+# separation
+separation(1, 0, 1, cmw)
+separation(1, 1, 1, ccw)
+separation(1, 2, 1, cmew)
+separation(1, 3, 1, cmcw)
+separation(1, 4, 1, cvmw)
+separation(1, 5, 1, crw)
+separation(1, 6, 1, cECTSw)
+
+# Création et remplissage des champs
+entre(2, 0, 1, cmw, 'Mathématique appliqués')
 
 root.mainloop()
