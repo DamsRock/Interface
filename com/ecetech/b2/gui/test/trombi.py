@@ -1,37 +1,40 @@
 from Tkinter import * 
 from functools import partial
+from lxml import etree 
 
 
 
 root = Tk()
 
+root.geometry("1040x1000")
 
 
-photo = PhotoImage(file="images1.gif")
-photos = PhotoImage(file="images-1.gif")
-phot0 = PhotoImage(file="index.gif")
-root.geometry("1000x1000")
-text = StringVar(root)
-
-label = Label(root, text='')
-entry_name = Entry(root, textvariable=text)
+button = []
+photo = []
+a=0
+b=0
+c=0
 
 
-button = Button(root, image=photo, height=300, width=300)
-
-putton = Button(root, image=photos, height=300, width=300)
-lutton = Button(root, image=phot0, height=300, width=300)
+mytree = etree.parse('img_trombi.xml')
+myroot = mytree.getroot()
 
 
+for x in myroot.findall ('personne') :
+	
+	nom=x.find('nom').text
+	img=x.find('image').text
+	photo.insert(c,PhotoImage(file=img))
+	button.insert(c,Button(root,text=nom, image=photo[c] , height=300, width=200,compound="top"))
+	
+	if a>4 :
+		b=b+1
+		a=0
+		
+	button[c].grid (row=b, column=a)
+	a=a+1
+	c=c+1
 
-label.grid(column=0, row=0)
-button.grid(column=1, row=0)
-putton.grid(column=2, row=0)
-lutton.grid(column=3, row=0)
-
-
-
+	
 
 root.mainloop()
-
-
