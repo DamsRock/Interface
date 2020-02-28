@@ -1,0 +1,23 @@
+<?xml version = "1.0" encoding="UTF-8" standalone="yes" ?>
+<repertoire>
+    <eleve>
+        <nom>DAGORNE</nom>
+        <prenom>Damien</prenom>
+        <module module="Sciences appliquées">
+            <matiere matiere="Maths">
+                <coeff>2</coeff>
+                <moyenne_eleve>12,21</moyenne_eleve>
+                <validation>validé</validation>
+                <rattrage></rattrage>
+                <ECTS>6</ECTS>
+            </matiere>
+            <matiere matiere="Physique appliqué">
+                <coeff>2</coeff>
+                <moyenne_eleve>10,92</moyenne_eleve>
+                <validation>validé</validation>
+                <rattrage></rattrage>
+                <ECTS>6</ECTS>
+            </matiere>
+        </module>
+    </eleve>
+</repertoire>
