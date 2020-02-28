@@ -1,10 +1,11 @@
 from tkinter import *
-from lxml import *
+
+from lxml import etree
 
 # Création de la fenêtre principale
 root = Tk()
 root.title('Bulletin')
-root.geometry('850x150')
+root.geometry('800x150')
 
 
 # Fonction de Séparation des modules
@@ -12,6 +13,7 @@ def separation(r, c, h, w):
     ligne = Text(root, height=h, width=w)
     ligne.configure({"background": "black"})
     ligne.grid(row=r, column=c)
+
 
 # Fonction création entré
 def entre(r, c, h, w, nom):
@@ -46,7 +48,15 @@ separation(1, 4, 1, cvmw)
 separation(1, 5, 1, crw)
 separation(1, 6, 1, cECTSw)
 
+# Ouverture et lecture du fichier XML
+r_bulletins = 'bulletin.xml'
+w_bulletins = 'bulletin.xml'
+def xml_read():
+    tree = etree.parse(r_bulletins)
+    for bulletin in tree.xpath('/bulletin/eleve'):
+        print(bulletin.text)
+
 # Création et remplissage des champs
-entre(2, 0, 1, cmw, 'Mathématique appliqués')
+entre(2, 0, 1, cmw, xml_read())
 
 root.mainloop()
