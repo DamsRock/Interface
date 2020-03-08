@@ -1,12 +1,11 @@
 from tkinter import *
-
-from lxml import etree
+import lxml.etree as et
+import xml.etree.ElementTree as ET
 
 # Création de la fenêtre principale
 root = Tk()
 root.title('Bulletin')
 root.geometry('800x150')
-
 
 # Fonction de Séparation des modules
 def separation(r, c, h, w):
@@ -49,14 +48,19 @@ separation(1, 5, 1, crw)
 separation(1, 6, 1, cECTSw)
 
 # Ouverture et lecture du fichier XML
-r_bulletins = 'bulletin.xml'
-w_bulletins = 'bulletin.xml'
+r_bulletins = "bulletin.xml"
+#w_bulletins = "bulletin.xml"
 def xml_read():
-    tree = etree.parse(r_bulletins)
-    for bulletin in tree.xpath('/bulletin/eleve'):
-        print(bulletin.text)
+    tree = et.parse(r_bulletins)
+    root = tree.getroot()
+    print(root.find('eleve/nom').text)
+    #for elem in root:
+    #    for subelem in elem:
+    #        print(subelem.text)
+
 
 # Création et remplissage des champs
-entre(2, 0, 1, cmw, xml_read())
+part = str(xml_read())
+entre(2, 0, 1, cmw, part)
 
 root.mainloop()

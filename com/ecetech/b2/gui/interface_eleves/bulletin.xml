@@ -1,6 +1,6 @@
 <?xml version = "1.0" encoding="UTF-8" standalone="yes" ?>
-<bulletin>
-    <eleve nom="DAGORNE">
+<data>
+    <eleve>
         <nom>DAGORNE</nom>
         <prenom>Damien</prenom>
         <module module="Sciences appliquées" moyenne_module="11,56" validation="validé">
@@ -74,4 +74,4 @@
             </matiere>
         </module>
     </eleve>
-</bulletin>
+</data>

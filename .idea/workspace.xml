@@ -31,7 +31,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -45,7 +45,7 @@
       <recent name="C:\Users\damie\Documents\travail\Interface\com\ecetech\b2\interface_eleves" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.trombi_tkinter">
+  <component name="RunManager" selected="Python.Bulletin">
     <configuration name="Bulletin" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Interface" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -67,27 +67,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="fichier_login" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Interface" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/com/ecetech/b2/gui" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/com/ecetech/b2/gui/fichier_login.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="test color" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Interface" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -101,6 +80,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/com/ecetech/b2/gui/test/test color.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_affichage_xml_tkinter" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Interface" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/com/ecetech/b2/gui/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/com/ecetech/b2/gui/test/test_affichage_xml_tkinter.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -153,11 +153,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Bulletin" />
+        <item itemvalue="Python.test_affichage_xml_tkinter" />
         <item itemvalue="Python.trombi_tkinter" />
         <item itemvalue="Python.trombi" />
-        <item itemvalue="Python.Bulletin" />
         <item itemvalue="Python.test color" />
-        <item itemvalue="Python.fichier_login" />
       </list>
     </recent_temporary>
   </component>
@@ -197,38 +197,43 @@
     <option name="LAST_COMMIT_MESSAGE" value="mise à niveau" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="739" y="262" key="FileChooserDialogImpl" timestamp="1582879913992">
+    <state x="739" y="262" key="FileChooserDialogImpl" timestamp="1582987735171">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="739" y="262" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1582879913992" />
-    <state width="1899" height="291" key="GridCell.Tab.0.bottom" timestamp="1582888651884">
+    <state x="739" y="262" key="FileChooserDialogImpl/1920.875.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1582987735171" />
+    <state width="1899" height="275" key="GridCell.Tab.0.bottom" timestamp="1583492456195">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="291" key="GridCell.Tab.0.bottom/0.0.1920.1040/0.1080.1920.1080@0.0.1920.1040" timestamp="1582888651884" />
-    <state width="1899" height="291" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582879852124" />
-    <state width="1899" height="148" key="GridCell.Tab.0.bottom/1920.875.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579863746464" />
-    <state width="1899" height="291" key="GridCell.Tab.0.center" timestamp="1582888651884">
+    <state width="1899" height="291" key="GridCell.Tab.0.bottom/0.0.1920.1040/0.1080.1280.720@0.0.1920.1040" timestamp="1583483885348" />
+    <state width="1899" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1040/0.1080.1920.1080@0.0.1920.1040" timestamp="1583492456195" />
+    <state width="1899" height="291" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583482694311" />
+    <state width="1899" height="291" key="GridCell.Tab.0.bottom/1920.875.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583267271113" />
+    <state width="1899" height="275" key="GridCell.Tab.0.center" timestamp="1583492456195">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="291" key="GridCell.Tab.0.center/0.0.1920.1040/0.1080.1920.1080@0.0.1920.1040" timestamp="1582888651884" />
-    <state width="1899" height="291" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582879852124" />
-    <state width="1899" height="148" key="GridCell.Tab.0.center/1920.875.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579863746464" />
-    <state width="1899" height="291" key="GridCell.Tab.0.left" timestamp="1582888651884">
+    <state width="1899" height="291" key="GridCell.Tab.0.center/0.0.1920.1040/0.1080.1280.720@0.0.1920.1040" timestamp="1583483885348" />
+    <state width="1899" height="275" key="GridCell.Tab.0.center/0.0.1920.1040/0.1080.1920.1080@0.0.1920.1040" timestamp="1583492456195" />
+    <state width="1899" height="291" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583482694311" />
+    <state width="1899" height="291" key="GridCell.Tab.0.center/1920.875.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583267271113" />
+    <state width="1899" height="275" key="GridCell.Tab.0.left" timestamp="1583492456195">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="291" key="GridCell.Tab.0.left/0.0.1920.1040/0.1080.1920.1080@0.0.1920.1040" timestamp="1582888651884" />
-    <state width="1899" height="291" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582879852124" />
-    <state width="1899" height="148" key="GridCell.Tab.0.left/1920.875.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579863746464" />
-    <state width="1899" height="291" key="GridCell.Tab.0.right" timestamp="1582888651884">
+    <state width="1899" height="291" key="GridCell.Tab.0.left/0.0.1920.1040/0.1080.1280.720@0.0.1920.1040" timestamp="1583483885348" />
+    <state width="1899" height="275" key="GridCell.Tab.0.left/0.0.1920.1040/0.1080.1920.1080@0.0.1920.1040" timestamp="1583492456195" />
+    <state width="1899" height="291" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583482694311" />
+    <state width="1899" height="291" key="GridCell.Tab.0.left/1920.875.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583267271113" />
+    <state width="1899" height="275" key="GridCell.Tab.0.right" timestamp="1583492456195">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="291" key="GridCell.Tab.0.right/0.0.1920.1040/0.1080.1920.1080@0.0.1920.1040" timestamp="1582888651884" />
-    <state width="1899" height="291" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582879852124" />
-    <state width="1899" height="148" key="GridCell.Tab.0.right/1920.875.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579863746464" />
-    <state x="461" y="162" key="SettingsEditor" timestamp="1582880736852">
+    <state width="1899" height="291" key="GridCell.Tab.0.right/0.0.1920.1040/0.1080.1280.720@0.0.1920.1040" timestamp="1583483885348" />
+    <state width="1899" height="275" key="GridCell.Tab.0.right/0.0.1920.1040/0.1080.1920.1080@0.0.1920.1040" timestamp="1583492456195" />
+    <state width="1899" height="291" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583482694311" />
+    <state width="1899" height="291" key="GridCell.Tab.0.right/1920.875.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583267271113" />
+    <state x="461" y="162" key="SettingsEditor" timestamp="1583490861180">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040/0.1080.1920.1080@0.0.1920.1040" timestamp="1582880736852" />
+    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040/0.1080.1920.1080@0.0.1920.1040" timestamp="1583490861180" />
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1582880412881" />
     <state x="615" y="188" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1579032582469">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -238,6 +243,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="769" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/0.1080.1920.1080@0.0.1920.1040" timestamp="1582818693190" />
+    <state x="1920" y="875" width="1658" height="1026" maximized="true" key="dock-window-1" timestamp="1583480680889">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1920" y="875" width="1658" height="1026" maximized="true" key="dock-window-1/1920.875.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583267271352" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1582816746796">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
