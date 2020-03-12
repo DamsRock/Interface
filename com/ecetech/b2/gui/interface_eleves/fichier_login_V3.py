@@ -4,8 +4,7 @@ from tkinter.messagebox import *
 from lxml import etree
 import trombi
 
-def onclick():
-	trombi.window_trombi()
+
 
 def LectureXML() :
 	tree = etree.parse("XML_login_file.xml")
@@ -41,7 +40,10 @@ def VerifXML():
 		# le mot de passe est incorrect : on affiche une boîte de dialogue
 		showwarning('Résultat','Mot de passe incorrect.\nVeuillez recommencer !')
 
-	
+def onclick():
+	VerifXML()
+	trombi.window_trombi()
+
 def EcritureXML():
 	print(text_name.get())
 	print(text_password.get())
@@ -70,7 +72,7 @@ text_mdp = StringVar(rootlogin)
 mdp = Label(rootlogin, text='Mot de passe')
 entree_nom = Entry(rootlogin, textvariable=text_id)
 entree_mdp = Entry(rootlogin, textvariable=text_mdp)
-button = Button(rootlogin, text='Connection', command=VerifXML)
+button = Button(rootlogin, text='Connection', command=onclick)
 mdp.grid(column=1, row=3)
 id.grid(column=1, row=1)
 entree_nom.grid(column=1, row=2)

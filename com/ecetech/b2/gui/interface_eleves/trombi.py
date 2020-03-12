@@ -1,11 +1,11 @@
-
-from tkinter import *
-from lxml import etree
-import Bulletin
-
 def window_trombi():
-	root = Tk()
+	import tkinter as tk
+	from lxml import etree
+	import Bulletin
 
+
+	root = tk.Tk()
+	root.title('trombi')
 
 	buttontrombi = []
 	photo = []
@@ -24,11 +24,11 @@ def window_trombi():
 		nom=x.find('nom').text
 		img=x.find('image').text
 		id=x.get('ID')
-		photo.insert(c,PhotoImage(file=img))
-		buttontrombi.insert(c,Button(root,text=nom, image=photo[c] , height=180, width=150,compound="top"))
+		photo.insert(c,tk.PhotoImage(file=img))
+		buttontrombi.insert(c,tk.Button(root,text=nom, image=photo[c] , height=180, width=150,compound="top"))
 		if(id=="DD"):
 			print(id)
-			buttontrombi.insert(c,Button(root,text=nom, image=photo[c] , height=180, width=150,compound="top",command=onclick))
+			buttontrombi.insert(c,tk.Button(root,text=nom, image=photo[c] , height=180, width=150,compound="top",command=onclick))
 
 		if a>5 :
 			b=b+1
@@ -39,3 +39,4 @@ def window_trombi():
 		c=c+1
 
 	root.mainloop()
+window_trombi()

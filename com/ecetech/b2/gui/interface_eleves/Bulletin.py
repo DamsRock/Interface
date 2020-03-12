@@ -1,9 +1,9 @@
-import requests
-import tkinter as tk
-import lxml.etree as et
-import xml.etree.ElementTree as ET
-
 def window_bulletin():
+
+    import requests
+    import tkinter as tk
+    import lxml.etree as et
+    import xml.etree.ElementTree as ET
 
     # Création de la fenêtre principale
     wind = tk.Tk()
