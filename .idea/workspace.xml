@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="13e8b89b-f9d6-4c70-ab85-17ca18c241be" name="Default Changelist" comment="" />
+    <list default="true" id="13e8b89b-f9d6-4c70-ab85-17ca18c241be" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/ecetech/b2/gui/interface_eleves/Bulletin.py" beforeDir="false" afterPath="$PROJECT_DIR$/com/ecetech/b2/gui/interface_eleves/Bulletin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/ecetech/b2/gui/interface_eleves/bulletin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/com/ecetech/b2/gui/interface_eleves/bulletin.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,7 +35,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -67,27 +71,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="fichier_login" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Interface" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/com/ecetech/b2/gui" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/com/ecetech/b2/gui/fichier_login.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="test color" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Interface" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -109,7 +92,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test_tableau" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="test_affichage_xml_tkinter" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Interface" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -121,7 +104,28 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/com/ecetech/b2/gui/test/test_tableau.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/com/ecetech/b2/gui/test/test_affichage_xml_tkinter.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="trombi" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Interface" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/com/ecetech/b2/gui/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/com/ecetech/b2/gui/test/trombi.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -154,10 +158,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.Bulletin" />
-        <item itemvalue="Python.test color" />
-        <item itemvalue="Python.fichier_login" />
+        <item itemvalue="Python.test_affichage_xml_tkinter" />
         <item itemvalue="Python.trombi_tkinter" />
-        <item itemvalue="Python.test_tableau" />
+        <item itemvalue="Python.trombi" />
+        <item itemvalue="Python.test color" />
       </list>
     </recent_temporary>
   </component>
@@ -197,46 +201,70 @@
     <option name="LAST_COMMIT_MESSAGE" value="mise à niveau" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="739" y="262" key="FileChooserDialogImpl" timestamp="1580895373288">
+    <state x="739" y="262" key="FileChooserDialogImpl" timestamp="1582987735171">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="739" y="262" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1580895373288" />
-    <state width="1899" height="148" key="GridCell.Tab.0.bottom" timestamp="1582814352925">
+    <state x="739" y="262" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1582879913992" />
+    <state x="739" y="262" key="FileChooserDialogImpl/1920.875.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1582987735171" />
+    <state width="1899" height="275" key="GridCell.Tab.0.bottom" timestamp="1583705812423">
+      <screen x="0" y="-1080" width="1920" height="1080" />
+    </state>
+    <state width="1899" height="291" key="GridCell.Tab.0.bottom/0.0.1920.1040/0.1080.1280.720@0.0.1920.1040" timestamp="1583483885348" />
+    <state width="1899" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1040/0.1080.1920.1080@0.0.1920.1040" timestamp="1583492456195" />
+    <state width="1899" height="291" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583482694311" />
+    <state width="1899" height="275" key="GridCell.Tab.0.bottom/1920.-201.1920.1040/0.-1080.1920.1080/0.0.1920.1040@0.-1080.1920.1080" timestamp="1583705812423" />
+    <state width="1899" height="275" key="GridCell.Tab.0.bottom/1920.875.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583672309995" />
+    <state width="1899" height="275" key="GridCell.Tab.0.center" timestamp="1583705812423">
+      <screen x="0" y="-1080" width="1920" height="1080" />
+    </state>
+    <state width="1899" height="291" key="GridCell.Tab.0.center/0.0.1920.1040/0.1080.1280.720@0.0.1920.1040" timestamp="1583483885348" />
+    <state width="1899" height="275" key="GridCell.Tab.0.center/0.0.1920.1040/0.1080.1920.1080@0.0.1920.1040" timestamp="1583492456195" />
+    <state width="1899" height="291" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583482694311" />
+    <state width="1899" height="275" key="GridCell.Tab.0.center/1920.-201.1920.1040/0.-1080.1920.1080/0.0.1920.1040@0.-1080.1920.1080" timestamp="1583705812423" />
+    <state width="1899" height="275" key="GridCell.Tab.0.center/1920.875.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583672309995" />
+    <state width="1899" height="275" key="GridCell.Tab.0.left" timestamp="1583705812423">
+      <screen x="0" y="-1080" width="1920" height="1080" />
+    </state>
+    <state width="1899" height="291" key="GridCell.Tab.0.left/0.0.1920.1040/0.1080.1280.720@0.0.1920.1040" timestamp="1583483885348" />
+    <state width="1899" height="275" key="GridCell.Tab.0.left/0.0.1920.1040/0.1080.1920.1080@0.0.1920.1040" timestamp="1583492456195" />
+    <state width="1899" height="291" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583482694311" />
+    <state width="1899" height="275" key="GridCell.Tab.0.left/1920.-201.1920.1040/0.-1080.1920.1080/0.0.1920.1040@0.-1080.1920.1080" timestamp="1583705812423" />
+    <state width="1899" height="275" key="GridCell.Tab.0.left/1920.875.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583672309995" />
+    <state width="1899" height="275" key="GridCell.Tab.0.right" timestamp="1583705812423">
+      <screen x="0" y="-1080" width="1920" height="1080" />
+    </state>
+    <state width="1899" height="291" key="GridCell.Tab.0.right/0.0.1920.1040/0.1080.1280.720@0.0.1920.1040" timestamp="1583483885348" />
+    <state width="1899" height="275" key="GridCell.Tab.0.right/0.0.1920.1040/0.1080.1920.1080@0.0.1920.1040" timestamp="1583492456195" />
+    <state width="1899" height="291" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583482694311" />
+    <state width="1899" height="275" key="GridCell.Tab.0.right/1920.-201.1920.1040/0.-1080.1920.1080/0.0.1920.1040@0.-1080.1920.1080" timestamp="1583705812423" />
+    <state width="1899" height="275" key="GridCell.Tab.0.right/1920.875.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583672309995" />
+    <state x="461" y="162" key="SettingsEditor" timestamp="1583490861180">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="148" key="GridCell.Tab.0.bottom/0.0.1920.1040/0.1080.1920.1080@0.0.1920.1040" timestamp="1582796490400" />
-    <state width="1899" height="148" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582814352925" />
-    <state width="1899" height="148" key="GridCell.Tab.0.bottom/1920.875.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579863746464" />
-    <state width="1899" height="148" key="GridCell.Tab.0.center" timestamp="1582814352925">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="148" key="GridCell.Tab.0.center/0.0.1920.1040/0.1080.1920.1080@0.0.1920.1040" timestamp="1582796490400" />
-    <state width="1899" height="148" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582814352925" />
-    <state width="1899" height="148" key="GridCell.Tab.0.center/1920.875.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579863746464" />
-    <state width="1899" height="148" key="GridCell.Tab.0.left" timestamp="1582814352924">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="148" key="GridCell.Tab.0.left/0.0.1920.1040/0.1080.1920.1080@0.0.1920.1040" timestamp="1582796490400" />
-    <state width="1899" height="148" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582814352924" />
-    <state width="1899" height="148" key="GridCell.Tab.0.left/1920.875.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579863746464" />
-    <state width="1899" height="148" key="GridCell.Tab.0.right" timestamp="1582814352925">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="148" key="GridCell.Tab.0.right/0.0.1920.1040/0.1080.1920.1080@0.0.1920.1040" timestamp="1582796490400" />
-    <state width="1899" height="148" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582814352925" />
-    <state width="1899" height="148" key="GridCell.Tab.0.right/1920.875.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579863746464" />
-    <state x="461" y="162" key="SettingsEditor" timestamp="1582799756667">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040/0.1080.1920.1080@0.0.1920.1040" timestamp="1582797677620" />
-    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1582799756667" />
+    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040/0.1080.1920.1080@0.0.1920.1040" timestamp="1583490861180" />
+    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1582880412881" />
     <state x="615" y="188" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1579032582469">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="615" y="188" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/1920.875.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1579032582469" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1582816746796">
+    <state x="769" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582818693190">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="769" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/0.1080.1920.1080@0.0.1920.1040" timestamp="1582818693190" />
+    <state x="1913" y="-201" width="974" height="1087" key="dock-window-1" timestamp="1583697633653">
+      <screen x="1920" y="-201" width="1920" height="1040" />
+    </state>
+    <state x="1913" y="-201" width="974" height="1087" key="dock-window-1/1920.-201.1920.1040/0.-1080.1920.1080/0.0.1920.1040@0.-1080.1920.1080" timestamp="1583697633653" />
+    <state x="1913" y="875" width="974" height="1087" key="dock-window-1/1920.875.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583670716465" />
+    <state x="2198" y="15" width="1658" height="723" maximized="true" key="dock-window-2" timestamp="1583699522239">
+      <screen x="1920" y="-201" width="1920" height="1040" />
+    </state>
+    <state x="2198" y="15" width="1658" height="723" maximized="true" key="dock-window-2/1920.-201.1920.1040/0.-1080.1920.1080/0.0.1920.1040@0.-1080.1920.1080" timestamp="1583699522239" />
+    <state x="2873" y="875" width="974" height="1087" key="dock-window-2/1920.875.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1583670450864" />
+    <state x="623" y="-846" width="672" height="705" key="search.everywhere.popup" timestamp="1583697901348">
+      <screen x="0" y="-1080" width="1920" height="1080" />
+    </state>
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1582816746796" />
+    <state x="623" y="-846" width="672" height="705" key="search.everywhere.popup/1920.-201.1920.1040/0.-1080.1920.1080/0.0.1920.1040@0.-1080.1920.1080" timestamp="1583697901348" />
   </component>
 </project>
