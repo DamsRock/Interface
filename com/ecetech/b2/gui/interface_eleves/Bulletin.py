@@ -1,10 +1,9 @@
+import requests
+import tkinter as tk
+import xml.etree.ElementTree as ET
+
+
 def window_bulletin():
-
-    import requests
-    import tkinter as tk
-    import lxml.etree as et
-    import xml.etree.ElementTree as ET
-
     # Création de la fenêtre principale
     wind = tk.Toplevel()
     wind.title('Bulletin')
@@ -36,6 +35,7 @@ def window_bulletin():
     moyc=4
     val_ou_rat=5
     ec=6
+
 
     # Ouverture et lecture du fichier XML
     r_bulletins = "http://www.mesdocumentsinterfaces.org/docs/bulletin.xml"
@@ -102,6 +102,6 @@ def window_bulletin():
                     entre(row,moye,1,cmew,moyenne_eleve)
 
 
-
     xml_read()
     wind.mainloop()
+

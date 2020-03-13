@@ -1,8 +1,9 @@
-def window_trombi():
-	import tkinter as tk
-	from lxml import etree
-	import Bulletin
+import tkinter as tk
+from lxml import etree
 
+
+def window_trombi():
+	import Bulletin
 
 	#root = tk.Tk()
 	root = tk.Toplevel()

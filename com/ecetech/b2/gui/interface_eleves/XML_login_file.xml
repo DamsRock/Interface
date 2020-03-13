@@ -7,9 +7,9 @@
   </personne>
 	
   <personne type="admin">
-    <nom>DAGGORNE</nom>
+    <nom>DAGORNE</nom>
     <prenom>Damien</prenom>
-    <motdepasse>test_de_mdp41</motdepasse>
+    <motdepasse>Franchement_bon</motdepasse>
   </personne>
 
    <personne type="user">
