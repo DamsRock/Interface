@@ -6,7 +6,7 @@ def window_bulletin():
     import xml.etree.ElementTree as ET
 
     # Création de la fenêtre principale
-    wind = tk.Tk()
+    wind = tk.Toplevel()
     wind.title('Bulletin')
     wind.geometry('729x650')
 

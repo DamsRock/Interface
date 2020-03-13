@@ -3,6 +3,7 @@ from functools import partial
 from tkinter.messagebox import *
 from lxml import etree
 import trombi
+import Bulletin
 
 
 
@@ -33,7 +34,9 @@ def onclick():
 
     if (val2+val)==2 :
         #showinfo('Résultat','Mot de passe correct.\n')
+        #print("ok")
         trombi.window_trombi()
+        #Bulletin.window_bulletin()
     else:
         showwarning('Résultat','Mot de passe incorrect.\nVeuillez recommencer !')
 
@@ -47,8 +50,8 @@ def EcritureXML():
 
     #repertoire = etree.Element("repertoire")
     personne = etree.Element("personne")
-    nom = etree.SubElement(personne, "nom")
-    nom.text = text_name.get()
+    name = etree.SubElement(personne, "nom")
+    name.text = text_name.get()
     mdp = etree.SubElement(personne, "motdepasse")
     mdp.text = text_password.get()
 
@@ -62,14 +65,14 @@ rootlogin = Tk()
 rootlogin.title("Fenêtre de connection")
 rootlogin.geometry("320x300")
 text_id = StringVar(rootlogin)
-id = Label(rootlogin, text='Nom')
+id_user = Label(rootlogin, text='Nom')
 text_mdp = StringVar(rootlogin)
 mdp = Label(rootlogin, text='Mot de passe')
 entree_nom = Entry(rootlogin, textvariable=text_id)
 entree_mdp = Entry(rootlogin, textvariable=text_mdp, show="*")
 button = Button(rootlogin, text='Connection', command=onclick)
 mdp.grid(column=1, row=3)
-id.grid(column=1, row=1)
+id_user.grid(column=1, row=1)
 entree_nom.grid(column=1, row=2)
 entree_mdp.grid(column=1, row=4)
 button.grid(column=1, row=5)
