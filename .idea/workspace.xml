@@ -2,13 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13e8b89b-f9d6-4c70-ab85-17ca18c241be" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/com/ecetech/b2/gui/interface_eleves/Bulletin de .pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/ecetech/b2/gui/interface_eleves/pdf.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/com/ecetech/b2/gui/interface_eleves/log.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com/ecetech/b2/gui/interface_eleves/Bulletin.py" beforeDir="false" afterPath="$PROJECT_DIR$/com/ecetech/b2/gui/interface_eleves/Bulletin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com/ecetech/b2/gui/interface_eleves/ecran.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/com/ecetech/b2/gui/interface_eleves/log_updateDD.py" beforeDir="false" afterPath="$PROJECT_DIR$/com/ecetech/b2/gui/interface_eleves/log_updateDD.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com/ecetech/b2/gui/interface_eleves/trombi.py" beforeDir="false" afterPath="$PROJECT_DIR$/com/ecetech/b2/gui/interface_eleves/trombi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bulletin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/XML_login_file.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bulletin.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/ecetech/b2/gui/interface_eleves/fichier_login_V3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cours_visu2d_python-v2.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img_trombi.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface__cole_profs.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface_eleve.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rendu graphique.rp" beforeDir="false" afterPath="$PROJECT_DIR$/Docs/rendu graphique.rp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trombi.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,15 +51,15 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\damie\Documents\travail\Interface\com\ecetech\b2\gui\test" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\damie\Documents\travail\Interface\Docs" />
       <recent name="C:\Users\damie\Documents\travail\Interface\com\ecetech\b2\gui\interface_eleves" />
       <recent name="C:\Users\damie\Documents\travail\Interface\com\ecetech\b2\gui\test" />
       <recent name="C:\Users\damie\Documents\travail\Interface\com\ecetech\b2\gui" />
       <recent name="C:\Users\damie\Documents\travail\Interface\com\ecetech\b2\test" />
-      <recent name="C:\Users\damie\Documents\travail\Interface\com\ecetech\b2\interface_eleves" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\damie\Documents\travail\Interface\com\ecetech\b2\gui\test" />
     </key>
   </component>
   <component name="RunManager" selected="Python.Bulletin">
@@ -205,10 +214,18 @@
     <option name="LAST_COMMIT_MESSAGE" value="mise à niveau" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="0" y="645" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1584741018250">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="0" y="645" key="#com.intellij.fileTypes.FileTypeChooser/1920.875.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1584741018250" />
     <state x="679" y="146" key="#log_updateDD" timestamp="1584088993348">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="679" y="146" key="#log_updateDD/0.0.1920.1040@0.0.1920.1040" timestamp="1584088993348" />
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1584738775180">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/1920.875.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1584738775180" />
     <state x="739" y="262" key="FileChooserDialogImpl" timestamp="1584530490062">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -256,6 +273,10 @@
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040/0.1080.1920.1080@0.0.1920.1040" timestamp="1584096591733" />
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1584013331546" />
     <state x="461" y="162" key="SettingsEditor/1920.-201.1920.1040/0.-1080.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1584712810940" />
+    <state x="719" y="253" key="VcsDiffUtil.ChangesDialog" timestamp="1584738747467">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="719" y="253" key="VcsDiffUtil.ChangesDialog/1920.875.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1584738747467" />
     <state x="615" y="188" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1579032582469">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
