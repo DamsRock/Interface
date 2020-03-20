@@ -143,5 +143,4 @@ def window_bulletin():
     xml_read()
     wind.mainloop()
 
-###
-window_bulletin()
+###window_bulletin()
