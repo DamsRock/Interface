@@ -2,13 +2,12 @@ from tkinter import *
 from functools import partial
 from tkinter.messagebox import *
 from lxml import etree
-import trombi
-import Bulletin
+import requests
+import xml.etree.ElementTree as ET
 
 
-
-def LectureXML() :
-    tree = etree.parse("XML_login_file.xml")
+def LectureXML():
+    tree = ET.ElementTree(ET.fromstring(requests.get('http://www.mesdocumentsinterfaces.org/docs/XML_login_file.xml').text)).getroot()
 
     for personne in tree.xpath("/repertoire/personne/nom"):
         print(personne.text)
@@ -17,6 +16,7 @@ def LectureXML() :
         print(personne.text)
 
 def onclick():
+    import trombi
     tree = etree.parse("XML_login_file.xml")
 
     val=0
@@ -33,10 +33,7 @@ def onclick():
             val2=1
 
     if (val2+val)==2 :
-        #showinfo('Résultat','Mot de passe correct.\n')
-        #print("ok")
         trombi.window_trombi()
-        #Bulletin.window_bulletin()
     else:
         showwarning('Résultat','Mot de passe incorrect.\nVeuillez recommencer !')
 
@@ -63,7 +60,14 @@ def EcritureXML():
 
 rootlogin = Tk()
 rootlogin.title("Fenêtre de connection")
-rootlogin.geometry("320x300")
+
+RWidth=rootlogin.winfo_screenwidth()
+RHeight=rootlogin.winfo_screenheight()
+print("Width:",RWidth,"  Height:",RHeight)
+positionRight = int(rootlogin.winfo_screenwidth()/2 - RWidth/2)
+positionDown = int(rootlogin.winfo_screenheight()/3 - RHeight/2)
+rootlogin.geometry("+{}+{}".format(positionRight, positionDown))
+
 text_id = StringVar(rootlogin)
 id_user = Label(rootlogin, text='Nom')
 text_mdp = StringVar(rootlogin)

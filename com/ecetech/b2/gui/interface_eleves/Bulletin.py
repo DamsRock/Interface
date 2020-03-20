@@ -1,13 +1,28 @@
 import requests
 import tkinter as tk
 import xml.etree.ElementTree as ET
+from reportlab.platypus import SimpleDocTemplate
+from reportlab.lib.styles import getSampleStyleSheet
+from reportlab.lib.pagesizes import A4
+from reportlab.lib import colors
+from reportlab.pdfgen import canvas
+from reportlab.lib.units import cm
+from reportlab.lib.utils import ImageReader
+from PIL import *
+import sys
 
 
 def window_bulletin():
     # Création de la fenêtre principale
-    wind = tk.Toplevel()
+    wind = tk.Tk()
     wind.title('Bulletin')
-    wind.geometry('729x650')
+    RWidth=wind.winfo_screenwidth()
+    RHeight=wind.winfo_screenheight()
+    print("Width:",RWidth,"  Height:",RHeight)
+    positionRight = int(wind.winfo_screenwidth()/2 - RWidth/2)
+    positionDown = int(wind.winfo_screenheight()/3 - RHeight/2)
+
+    wind.geometry("+{}+{}".format(positionRight, positionDown))
 
     # Fonction de Séparation des modules
     def separation(r, c, h, w):
@@ -21,7 +36,7 @@ def window_bulletin():
         champ = tk.Label(wind, text=str(la), height=h, width=w, relief=tk.RIDGE)
         champ.grid(row=r, column=c)
 
-    mod=7
+    mod=7  #Largeur champs modules
     cmw = 31  # largeur champs matières
     ccw = 5  # largeur champs coeff
     cmew = 13  # largeur champs moyenne eleves
@@ -35,7 +50,6 @@ def window_bulletin():
     moyc=4
     val_ou_rat=5
     ec=6
-
 
     # Ouverture et lecture du fichier XML
     r_bulletins = "http://www.mesdocumentsinterfaces.org/docs/bulletin.xml"
@@ -59,9 +73,11 @@ def window_bulletin():
             prenom = eleve.find('prenom').text
             moyenne_total = eleve.find('moyenne_total').text
             wind.title('Bulletin de ' + prenom + ' ' + nom + '      Moyenne total = ' + moyenne_total)
+            M=0 # initialisation nombre de module
 
             for modules in eleve.findall('module'):
                 row+=1
+                M+=1
                 # separation des modules
                 separation(row, 0, 1, mod)
                 separation(row, mati, 1, cmw)
@@ -73,7 +89,8 @@ def window_bulletin():
                 row+=1
 
                 #recuperation et affichage des modules de l'eleve
-                entre(row,0,1,mod,'Module')
+
+                entre(row,0,1,mod,'Module '+str(M))
                 nom_module = modules.get('nom_module')
                 moy_module = modules.get('moyenne_module')
                 if moy_module is None: moy_module = "-"
@@ -100,8 +117,31 @@ def window_bulletin():
                     entre(row,moyc,1,cmcw,moy_matiere)
                     entre(row,coef,1,ccw,coeff)
                     entre(row,moye,1,cmew,moyenne_eleve)
+            print(row)
+            return nom, prenom
+    def enregistrer():
+        filename = 'Bulletin de .pdf'
+
+        ''' GENERATION DU MEME SCHEMA AVEC UN CANVAS REPORTLAB'''
+        pdf= canvas.Canvas(filename, pagesize=A4)
+        pdf.setFont('Helvetica', 14)
+        pdf.setFillColor(colors.red)
+
+        pdf.drawString(50, 50, str(wind))
+
+        pdf.showPage()
+
+        pdf.save()
+
+    enregistrer()
+    #bouton = tk.Button(wind, text="Exporter en PDF le bulletin",command=enregistrer())
+    print('nimp')
+    #bouton.pack()
+    #bouton.grid(row=32, column=mati)
 
 
     xml_read()
     wind.mainloop()
 
+###
+window_bulletin()
