@@ -14,8 +14,8 @@ def window_trombi():
 	RWidth=root.winfo_screenwidth()
 	RHeight=root.winfo_screenheight()
 	print("Width:",RWidth,"  Height:",RHeight)
-	positionRight = int(root.winfo_screenwidth()/2 - RWidth/2)
-	positionDown = int(root.winfo_screenheight()/3 - RHeight/2)
+	positionRight = int(root.winfo_screenwidth()/2 - RWidth/10)
+	positionDown = int(root.winfo_screenheight()/2 - RHeight/4)
 	root.geometry("+{}+{}".format(positionRight, positionDown))
 
 	buttontrombi = []
@@ -31,7 +31,7 @@ def window_trombi():
 		Bulletin.window_bulletin()
 
 	for x in myroot.findall('personne'):
-		nom=x.find('nom').text
+		nom=str(x.find('nom').text)
 		img=x.find('image').text
 		print(img)
 		id=x.get('ID')

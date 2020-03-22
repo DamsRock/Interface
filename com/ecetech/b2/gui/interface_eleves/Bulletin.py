@@ -19,8 +19,8 @@ def window_bulletin():
     RWidth=wind.winfo_screenwidth()
     RHeight=wind.winfo_screenheight()
     print("Width:",RWidth,"  Height:",RHeight)
-    positionRight = int(wind.winfo_screenwidth()/2 - RWidth/2)
-    positionDown = int(wind.winfo_screenheight()/3 - RHeight/2)
+    positionRight = int(wind.winfo_screenwidth()/2 - RWidth/10)
+    positionDown = int(wind.winfo_screenheight()/2 - RHeight/4)
 
     wind.geometry("+{}+{}".format(positionRight, positionDown))
 
