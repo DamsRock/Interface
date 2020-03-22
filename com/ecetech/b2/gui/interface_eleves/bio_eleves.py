@@ -3,7 +3,7 @@ from tkinter import *
 #la création de cette fonction permet l'affichage d'un image
 def image():
     photo = PhotoImage(file="random_image.png") # l'importation de la photo photo ce fait ici
-    profil = PhotoImage(file="IMAG0753png.png")
+    profil = PhotoImage(file="../test/IMAG0753png.png")
     canvas = Canvas(gui, width=1080, height=1100)
     #canvas.create_image(0, 0, anchor=NW, image=photo)
     canvas.create_image(0, 0, anchor=NW, image=profil)

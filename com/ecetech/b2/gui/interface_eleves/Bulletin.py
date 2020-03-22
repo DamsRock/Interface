@@ -10,6 +10,7 @@ else:
 import xml.etree.ElementTree as ET
 from reportlab.platypus import SimpleDocTemplate
 from reportlab.lib.styles import getSampleStyleSheet
+from reportlab.lib.pagesizes import A0
 from reportlab.lib.pagesizes import A4
 from reportlab.lib import colors
 from reportlab.pdfgen import canvas
@@ -58,6 +59,9 @@ def window_bulletin():
     moyc=4
     val_ou_rat=5
     ec=6
+
+    global save
+    save=0
 
     # Ouverture et lecture du fichier XML
     r_bulletins = "http://www.mesdocumentsinterfaces.org/docs/bulletin.xml"
@@ -125,10 +129,11 @@ def window_bulletin():
                     entre(row,moyc,1,cmcw,moy_matiere)
                     entre(row,coef,1,ccw,coeff)
                     entre(row,moye,1,cmew,moyenne_eleve)
-            print(row)
+            print('ligne à la fin de l\'affichage du bulletin', row)
 
         def enregistrer():
             # le fichier est enregistré avec le nom de l'élève en question
+            global save
             filename = 'Bulletin de '+nom+' '+prenom+'.pdf'
 
             # le fichier est enregistré dans le dossier des téléchargements peut importe le PC et l'utilisateur (sous Windows)
@@ -139,7 +144,8 @@ def window_bulletin():
             pdf.setFont('Helvetica', 14)
             pdf.setFillColor(colors.black)
 
-            pdf.drawString(50,599, nom+' '+prenom)
+            pdf.drawString()
+            pdf.drawString(2*cm,27.5*cm, nom+' '+prenom)
 
 
             pdf.setFillColor(colors.blue)
@@ -149,9 +155,15 @@ def window_bulletin():
             pdf.showPage()
 
             pdf.save()
+            save+=1
+            print('sauvegarde faite ',save,' fois')
 
+
+
+        rowb = row+10
         bouton = tk.Button(wind, text="Exporter en PDF le bulletin",command=enregistrer)
-        bouton.grid(row=32, column=val_ou_rat)
+        bouton.grid(row=rowb, column=val_ou_rat)
+        print('ligne après bulletin:',rowb)
 
 
     xml_read()

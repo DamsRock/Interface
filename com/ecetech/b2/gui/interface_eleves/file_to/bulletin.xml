@@ -1,0 +1,70 @@
+<?xml version = "1.0" encoding="UTF-8" standalone="yes" ?>
+<data>
+    <eleve>
+        <nom>DAGORNE</nom>
+        <prenom>Damien</prenom>
+        <moyenne_total>12,86</moyenne_total>
+        <module nom_module="Sciences appliquees" moyenne_module="11,56" validation="valide" ECTS="6">
+            <matiere nom_matiere="Maths" moyenne="10,52">
+                <coeff>2</coeff>
+                <moyenne_eleve>12,21</moyenne_eleve>
+            </matiere>
+            <matiere nom_matiere="Physique appliquee" moyenne="11,22">
+                <coeff>2</coeff>
+                <moyenne_eleve>10,92</moyenne_eleve>
+            </matiere>
+        </module>
+        <module nom_module="technique_6" moyenne_module="11,91" validation="valide" ECTS="6">
+            <matiere nom_matiere="Algorithmique" moyenne="9,51">
+                <coeff>1,5</coeff>
+                <moyenne_eleve>9</moyenne_eleve>
+            </matiere>
+            <matiere nom_matiere="Projet IT" moyenne="15,67">
+                <coeff>2</coeff>
+                <moyenne_eleve>16</moyenne_eleve>
+            </matiere>
+            <matiere nom_matiere="Cloud Computing" moyenne="10,07">
+                <coeff>2</coeff>
+                <moyenne_eleve>10</moyenne_eleve>
+            </matiere>
+        </module>
+        <module nom_module="technique_7" moyenne_module="13,80" validation="valide" ECTS="6">
+            <matiere nom_matiere="Digital Business" moyenne="11,93">
+                <coeff>2</coeff>
+                <moyenne_eleve>12</moyenne_eleve>
+            </matiere>
+            <matiere nom_matiere="Data Management" moyenne="13,49">
+                <coeff>3</coeff>
+                <moyenne_eleve>15</moyenne_eleve>
+            </matiere>
+        </module>
+        <module nom_module="Management et Projet" moyenne_module="15,29" validation="valide" ECTS="6">
+            <matiere nom_matiere="Gestion des Risques" moyenne="14,90">
+                <coeff>2</coeff>
+                <moyenne_eleve>14,25</moyenne_eleve>
+            </matiere>
+            <matiere nom_matiere="Projet management en groupe" moyenne="">
+                <coeff>2</coeff>
+                <moyenne_eleve>16,33</moyenne_eleve>
+            </matiere>
+        </module>
+        <module nom_module="Langue et formations humaines" moyenne_module="11,50" validation="valide" ECTS="6">
+            <matiere nom_matiere="Communication et expression en anglais" moyenne="14,81">
+                <coeff>1,5</coeff>
+                <moyenne_eleve>13</moyenne_eleve>
+            </matiere>
+            <matiere nom_matiere="Communication" moyenne="11,62">
+                <coeff>1,5</coeff>
+                <moyenne_eleve>10</moyenne_eleve>
+            </matiere>
+            <matiere nom_matiere="Promotion ecole +" moyenne="15,14">
+                <coeff>1</coeff>
+                <moyenne_eleve></moyenne_eleve>
+            </matiere>
+            <matiere nom_matiere="Activites parascolaires++" moyenne="">
+                <coeff>0,5</coeff>
+                <moyenne_eleve></moyenne_eleve>
+            </matiere>
+        </module>
+    </eleve>
+</data>

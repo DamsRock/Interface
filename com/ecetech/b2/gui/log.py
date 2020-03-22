@@ -1,9 +1,12 @@
 import sys
+import os
 if sys.version[0] =='2':       # le premier caractère de la chaîne nous suffit
     from Tkinter import *      # module Tkinter pour Python 2
 else:
     from tkinter import *      # module Tkinter pour Python 3
 
+sys.path.append(os.path.abspath("./interface_eleves"))
+import trombi
 from functools import partial
 from tkinter.messagebox import *
 from lxml import etree
@@ -20,14 +23,14 @@ def LectureXML():
     for personne in tree.findall("/repertoire/personne/motdepasse"):
         print(personne.text)
 
+
 def onclick():
-    import trombi
     tree = ET.ElementTree(ET.fromstring(requests.get('http://www.mesdocumentsinterfaces.org/docs/XML_login_file.xml').text)).getroot()
 
     val=0
     val2=0
     print(text_id.get())
-    
+
 
     for personne in tree.findall("personne"):
         nom = personne.find("nom").text
