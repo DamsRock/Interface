@@ -1,5 +1,12 @@
+''' importation des modules '''
+
 import requests
-import tkinter as tk
+import sys
+if sys.version[0] =='2':       # le premier caractère de la chaîne nous suffit
+    import Tkinter as tk      # module Tkinter pour Python 2
+else:
+    import tkinter as tk      # module Tkinter pour Python 33
+
 import xml.etree.ElementTree as ET
 from reportlab.platypus import SimpleDocTemplate
 from reportlab.lib.styles import getSampleStyleSheet
@@ -9,12 +16,13 @@ from reportlab.pdfgen import canvas
 from reportlab.lib.units import cm
 from reportlab.lib.utils import ImageReader
 from PIL import *
-import sys
+
+import os
 
 
 def window_bulletin():
     # Création de la fenêtre principale
-    wind = tk.Tk()
+    wind = tk.Toplevel()
     wind.title('Bulletin')
     RWidth=wind.winfo_screenwidth()
     RHeight=wind.winfo_screenheight()
@@ -118,29 +126,37 @@ def window_bulletin():
                     entre(row,coef,1,ccw,coeff)
                     entre(row,moye,1,cmew,moyenne_eleve)
             print(row)
-            return nom, prenom
-    def enregistrer():
-        filename = 'Bulletin de .pdf'
 
-        ''' GENERATION DU MEME SCHEMA AVEC UN CANVAS REPORTLAB'''
-        pdf= canvas.Canvas(filename, pagesize=A4)
-        pdf.setFont('Helvetica', 14)
-        pdf.setFillColor(colors.red)
+        def enregistrer():
+            # le fichier est enregistré avec le nom de l'élève en question
+            filename = 'Bulletin de '+nom+' '+prenom+'.pdf'
 
-        pdf.drawString(50, 50, str(wind))
+            # le fichier est enregistré dans le dossier des téléchargements peut importe le PC et l'utilisateur (sous Windows)
+            whereto =os.path.join(os.path.expanduser('~'),'Downloads',filename)
 
-        pdf.showPage()
+            #Génération d'un PDF
+            pdf= canvas.Canvas("{0}".format(whereto), pagesize=A4)
+            pdf.setFont('Helvetica', 14)
+            pdf.setFillColor(colors.black)
 
-        pdf.save()
+            pdf.drawString(50,599, nom+' '+prenom)
 
-    enregistrer()
-    #bouton = tk.Button(wind, text="Exporter en PDF le bulletin",command=enregistrer())
-    print('nimp')
-    #bouton.pack()
-    #bouton.grid(row=32, column=mati)
+
+            pdf.setFillColor(colors.blue)
+            pdf.drawString(400,50, text="campus en ligne de l'ecetech")
+            pdf.linkURL(url="ecetech.campusonline.me", rect="")
+
+            pdf.showPage()
+
+            pdf.save()
+
+        #enregistrer()
+        bouton = tk.Button(wind, text="Exporter en PDF le bulletin",command=enregistrer)
+        bouton.grid(row=32, column=mati)
 
 
     xml_read()
     wind.mainloop()
 
-###window_bulletin()
+###
+window_bulletin()

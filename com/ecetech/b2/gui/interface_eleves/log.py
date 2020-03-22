@@ -1,4 +1,9 @@
-from tkinter import *
+import sys
+if sys.version[0] =='2':       # le premier caractère de la chaîne nous suffit
+    from Tkinter import *      # module Tkinter pour Python 2
+else:
+    from tkinter import *      # module Tkinter pour Python 3
+
 from functools import partial
 from tkinter.messagebox import *
 from lxml import etree

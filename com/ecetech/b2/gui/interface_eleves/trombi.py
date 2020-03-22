@@ -1,4 +1,9 @@
-import tkinter as tk
+import sys
+if sys.version[0] =='2':       # le premier caractère de la chaîne nous suffit
+    import Tkinter as tk      # module Tkinter pour Python 2
+else:
+    import tkinter as tk      # module Tkinter pour Python 3
+
 from lxml import etree
 import requests
 import xml.etree.ElementTree as ET
@@ -14,8 +19,8 @@ def window_trombi():
 	RWidth=root.winfo_screenwidth()
 	RHeight=root.winfo_screenheight()
 	print("Width:",RWidth,"  Height:",RHeight)
-	positionRight = int(root.winfo_screenwidth()/2 - RWidth/10)
-	positionDown = int(root.winfo_screenheight()/2 - RHeight/4)
+	positionRight = int(root.winfo_screenwidth()/2 - RWidth/5)
+	positionDown = int(root.winfo_screenheight()/2 - RHeight/3)
 	root.geometry("+{}+{}".format(positionRight, positionDown))
 
 	buttontrombi = []
