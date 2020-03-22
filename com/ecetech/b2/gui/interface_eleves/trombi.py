@@ -1,9 +1,12 @@
 import sys
+import os
 if sys.version[0] =='2':       # le premier caractère de la chaîne nous suffit
     import Tkinter as tk      # module Tkinter pour Python 2
 else:
     import tkinter as tk      # module Tkinter pour Python 3
 
+from PIL import Image
+from io import BytesIO
 from lxml import etree
 import requests
 import xml.etree.ElementTree as ET
@@ -37,12 +40,18 @@ def window_trombi():
 
     for x in myroot.findall('personne'):
         nom=str(x.find('nom').text)
-        img=x.find('image').text
-
-        print(img)
+        nameimg=x.find('image').text
+        print(nameimg)
+        #img = requests.get('http://www.mesdocumentsinterfaces.org/docs/antoine.gif')
+        #response = requests.get('http://www.mesdocumentsinterfaces.org/docs/'+nameimg)
+        #img = Image.open(BytesIO(response.content))
+        img=os.path.abspath("./interface_eleves/"+nameimg)
         id=x.get('ID')
         photo.insert(c,tk.PhotoImage(file=img))
         buttontrombi.insert(c,tk.Button(root,text=nom, image=photo[c] , height=180, width=150,compound="top"))
+        if(id=="AA"):
+            print(id)
+            buttontrombi.insert(c,tk.Button(root,text=nom, image=photo[c] , height=180, width=150,compound="top",command=onclick))
         if(id=="DD"):
             print(id)
             buttontrombi.insert(c,tk.Button(root,text=nom, image=photo[c] , height=180, width=150,compound="top",command=onclick))

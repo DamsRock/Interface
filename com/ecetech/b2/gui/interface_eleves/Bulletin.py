@@ -144,7 +144,7 @@ def window_bulletin():
             pdf.setFont('Helvetica', 14)
             pdf.setFillColor(colors.black)
 
-            pdf.drawString()
+            pdf.drawString(2*cm,27*cm,'Bulletin de semestre')
             pdf.drawString(2*cm,27.5*cm, nom+' '+prenom)
 
 
