@@ -150,13 +150,11 @@ def window_bulletin():
 
             pdf.save()
 
-        #enregistrer()
         bouton = tk.Button(wind, text="Exporter en PDF le bulletin",command=enregistrer)
-        bouton.grid(row=32, column=mati)
+        bouton.grid(row=32, column=val_ou_rat)
 
 
     xml_read()
     wind.mainloop()
 
-###
-window_bulletin()
+###window_bulletin()
