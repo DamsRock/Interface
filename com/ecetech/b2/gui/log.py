@@ -53,18 +53,19 @@ def onclick():
 def EcritureXML():
     print(text_name.get())
     print(text_password.get())
-    tree = ET.ElementTree(ET.fromstring(requests.get('http://www.mesdocumentsinterfaces.org/docs/XML_login_file.xml').text))
-    rootlogin =tree.getroot()
+    to=os.path.abspath('./interface_eleves/file_to/XML_login_file.xml')
+    tree = ET.parse(to)
+    rootlogin=tree.getroot()
 
     #repertoire = etree.Element("repertoire")
-    personne = etree.Element("personne")
-    name = etree.SubElement(personne, "nom")
+    personne = ET.Element("personne")
+    name = ET.SubElement(personne, "nom")
     name.text = text_name.get()
-    mdp = etree.SubElement(personne, "motdepasse")
+    mdp = ET.SubElement(personne, "motdepasse")
     mdp.text = text_password.get()
 
     rootlogin.append(personne)
-    tree.write(ET.ElementTree(ET.fromstring(requests.get('http://www.mesdocumentsinterfaces.org/docs/XML_login_file.xml').text)).getroot())
+    tree.write(to)
 
 
 
@@ -103,7 +104,7 @@ text_password = StringVar(rootlogin)
 password = Label(rootlogin, text='Mot de passe')
 entree_name = Entry(rootlogin, textvariable=text_name)
 entree_password = Entry(rootlogin, textvariable=text_password, show="*")
-button = Button(rootlogin, text='Valider')
+button = Button(rootlogin, text='Valider', command=EcritureXML)
 Label1.grid(column=1, row=8)
 name.grid(column=1, row=10)
 password.grid(column=1, row=12)

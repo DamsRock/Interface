@@ -21,7 +21,7 @@ from PIL import *
 import os
 
 
-def window_bulletin():
+def window_bulletin(id):
     # Création de la fenêtre principale
     wind = tk.Toplevel()
     wind.title('Bulletin')
@@ -79,7 +79,8 @@ def window_bulletin():
 
         #recuperation du fichier sur ma VM CentOS (/var/www/Interfaces/docs/bulletin.xml) ;)
         tree = ET.ElementTree(ET.fromstring(requests.get(r_bulletins).text)).getroot()
-        for eleve in tree.findall('eleve'):
+        print(id)
+        for eleve in tree.findall(id):
             row+=1
             nom = eleve.find('nom').text
             prenom = eleve.find('prenom').text
@@ -137,7 +138,7 @@ def window_bulletin():
             filename = 'Bulletin de '+nom+' '+prenom+'.pdf'
 
             # le fichier est enregistré dans le dossier des téléchargements peut importe le PC et l'utilisateur (sous Windows)
-            whereto =os.path.join(os.path.expanduser('~'),'Downloads',filename)
+            whereto=os.path.join(os.path.expanduser('~'),'Downloads',filename)
 
             #Génération d'un PDF
             pdf= canvas.Canvas("{0}".format(whereto), pagesize=A4)
@@ -169,4 +170,4 @@ def window_bulletin():
     xml_read()
     wind.mainloop()
 
-###window_bulletin()
+###window_bulletin('DD')

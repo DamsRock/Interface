@@ -8,12 +8,17 @@ else:
 from PIL import Image
 from io import BytesIO
 from lxml import etree
+from tkinter.messagebox import *
 import requests
 import xml.etree.ElementTree as ET
 
 
 def window_trombi():
     import Bulletin
+    a=0
+    b=0
+    c=0
+    i=0
 
     #root = tk.Tk()
     root = tk.Toplevel()
@@ -26,17 +31,26 @@ def window_trombi():
     positionDown = int(root.winfo_screenheight()/2 - RHeight/3)
     root.geometry("+{}+{}".format(positionRight, positionDown))
 
+    nombulletin = []
     buttontrombi = []
     photo = []
-    a=0
-    b=0
-    c=0
+
 
     mytree = ET.ElementTree(ET.fromstring(requests.get('http://www.mesdocumentsinterfaces.org/docs/img_trombi.xml').text))
     myroot = mytree.getroot()
 
+
+    for e in myroot.findall('personne'):
+        nombull=str(e.find('id').text)
+        nombulletin.insert(i,nombull)
+        print('\t',nombulletin[i])
+        i+=1
+
     def onclick():
-        Bulletin.window_bulletin()
+        #valbut = labnom.get()
+        Bulletin.window_bulletin(valbut)
+
+
 
     for x in myroot.findall('personne'):
         nom=str(x.find('nom').text)
@@ -46,15 +60,13 @@ def window_trombi():
         #response = requests.get('http://www.mesdocumentsinterfaces.org/docs/'+nameimg)
         #img = Image.open(BytesIO(response.content))
         img=os.path.abspath("./interface_eleves/"+nameimg)
-        id=x.get('ID')
+
         photo.insert(c,tk.PhotoImage(file=img))
-        buttontrombi.insert(c,tk.Button(root,text=nom, image=photo[c] , height=180, width=150,compound="top"))
-        if(id=="AA"):
-            print(id)
-            buttontrombi.insert(c,tk.Button(root,text=nom, image=photo[c] , height=180, width=150,compound="top",command=onclick))
-        if(id=="DD"):
-            print(id)
-            buttontrombi.insert(c,tk.Button(root,text=nom, image=photo[c] , height=180, width=150,compound="top",command=onclick))
+
+        #labnom = tk.StringVar(root)
+
+        buttontrombi.insert(c,tk.Button(root,text=nom+' ('+nombulletin[c]+')',textvariable=nombulletin[c], image=photo[c] , height=180, width=150,compound="top",command=onclick))
+
         if a>5 :
             b=b+1
             a=0
@@ -62,6 +74,5 @@ def window_trombi():
         buttontrombi[c].grid (row=b, column=a)
         a=a+1
         c=c+1
-
     root.mainloop()
 #window_trombi()
