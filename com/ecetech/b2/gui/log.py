@@ -4,7 +4,7 @@ if sys.version[0] =='2':       # le premier caractère de la chaîne nous suffit
     from Tkinter import *      # module Tkinter pour Python 2
 else:
     from tkinter import *      # module Tkinter pour Python 3
-
+import pysftp
 sys.path.append(os.path.abspath("./interface_eleves"))
 import trombi
 from functools import partial
@@ -13,6 +13,11 @@ from lxml import etree
 import requests
 import xml.etree.ElementTree as ET
 
+
+def envoi_fichier():
+        with pysftp.Connection('192.168.119.3', username='dd', password='lock on beatch') as sftp:
+            with sftp.cd(''):
+                sftp.put('/var/www/Interfaces/docs/')
 
 def LectureXML():
     tree = ET.ElementTree(ET.fromstring(requests.get('http://www.mesdocumentsinterfaces.org/docs/XML_login_file.xml').text)).getroot()
@@ -53,8 +58,8 @@ def onclick():
 def EcritureXML():
     print(text_name.get())
     print(text_password.get())
-    to=os.path.abspath('./interface_eleves/file_to/XML_login_file.xml')
-    tree = ET.parse(to)
+    tow=os.path.abspath('./interface_eleves/file_to/XML_login_file.xml')
+    tree = ET.parse(tow)
     rootlogin=tree.getroot()
 
     #repertoire = etree.Element("repertoire")
@@ -65,7 +70,8 @@ def EcritureXML():
     mdp.text = text_password.get()
 
     rootlogin.append(personne)
-    tree.write(to)
+    tree.write(tow)
+    #envoi_fichier()
 
 
 

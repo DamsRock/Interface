@@ -16,8 +16,4 @@
         <prenom>Victor</prenom>
         <motdepasse>plop_le_drop</motdepasse>
     </personne>
-    <personne>
-        <nom>MOT</nom>
-        <motdepasse>12</motdepasse>
-    </personne>
-</data>
+<personne><nom>CHRIS</nom><motdepasse>5402</motdepasse></personne></data>

@@ -48,7 +48,7 @@ def window_trombi():
 
     def onclick():
         #valbut = labnom.get()
-        Bulletin.window_bulletin(valbut)
+        Bulletin.window_bulletin(nombulletin[3])
 
 
 
