@@ -3,110 +3,130 @@
 <trombi>
 
  
-<personne ID="AA">
+<personne>
+	<id>AA</id>
 	<nom> Antoine Aouat</nom>
 		<image>antoine.gif</image>
 </personne>
 
-<personne ID="AB">
+<personne>
+	<id>AB</id>
 	<nom> Augustin Biar</nom>
 		<image>augustin.gif</image>
 </personne>
 
-<personne ID="PC">
+<personne>
+	<id>PC</id>
 	<nom> Pablo Castro</nom>
 		<image>pablo.gif</image>
 </personne>
 
-<personne ID="DD">
+<personne>
+	<id>DD</id>
 	<nom> Damien Dagorne</nom>
 		<image>damien.gif</image>
 </personne>
 
-<personne ID="VD">
+<personne>
+	<id>VD</id>
 	<nom> Victor Delaroque</nom>
 		<image>victor.gif</image>
 </personne>
 
-<personne ID="EYY">
+<personne>
+	<id>EYY</id>
 	<nom> El Yazighi Youssef</nom>
 		<image>youssef.gif</image>
 </personne>
 
-<personne ID="SF">
+<personne>
+	<id>SF</id>
 	<nom> Sem-lord Fanou</nom>
 		<image>sem.gif</image>
 </personne>
 
-<personne ID="SK">
+<personne>
+	<id>SK</id>
 	<nom> Sada Keita</nom>
 		<image>sada.gif</image>
 </personne>
 
-<personne ID="SM">
+<personne>
+	<id>SM</id>
 	<nom> Sid-ahmed Mekhiche</nom>
 		<image>sid.gif</image>
 </personne>
 
-<personne ID="AM">
+<personne>
+	<id>AM</id>
 	<nom> Anis Mekrazi</nom>
 		<image>anis.gif</image>
 </personne>
 
-<personne ID="SM">
+<personne>
+	<id>SM</id>
 	<nom> Seth Migan</nom>
 		<image>seth.gif</image>
 </personne>
 
-<personne ID="NN">
+<personne>
+	<id>NN</id>
 	<nom> Naomi Ngnikam</nom>
 		<image>nao.gif</image>
 </personne>
 
-<personne ID="FN">
+<personne>
+	<id>FN</id>
 	<nom> Franck-emmanuel Nouafo</nom>
 		<image>frank.gif</image>
 </personne>
 
-<personne ID="PP">
+<personne>
+	<id>PP</id>
 	<nom> Paul Perceau</nom>
 		<image>paul.gif</image>
 </personne>
 
-<personne ID="JP">
+<personne>
+	<id>JP</id>
 	<nom> Jacques Polart</nom>
 		<image>jacques.gif</image>
 </personne>
 
-<personne ID="KP">
+<personne>
+	<id>KP</id>
 	<nom> Kevin Protin</nom>
 		<image>kevin.gif</image>
 </personne>
 
-<personne ID="SR">
+<personne>
+	<id>SR</id>
 	<nom> Sammy Rabhine</nom>
 		<image>sammy.gif</image>
 </personne>
 
-<personne ID="ChR">
+<personne>
+	<id>chR</id>
 	<nom> Chloe Ravonison</nom>
 		<image>chloe.gif</image>
 </personne>
 
-<personne ID="CR">
+<personne>
+	<id>CR</id>
 	<nom> Clement Rouault</nom>
 		<image>clement.gif</image>
 </personne>
 
-<personne ID="NT">
+<personne>
+	<id>NT</id>
 	<nom> Nizar Tajmouti</nom>
 		<image>nizar.gif</image>
 </personne>
 
-<personne ID="EW">
+<personne>
+	<id>EW</id>
 	<nom> Elian Wolf</nom>
 		<image>elian.gif</image>
 </personne>
-
 
 </trombi>
