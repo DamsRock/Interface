@@ -20,7 +20,7 @@ def envoi_fichier():
                 sftp.put('/var/www/Interfaces/docs/')
 
 def LectureXML():
-    tree = ET.ElementTree(ET.fromstring(requests.get('http://www.mesdocumentsinterfaces.org/docs/XML_login_file.xml').text)).getroot()
+    tree = ET.ElementTree(ET.fromstring(requests.get('http://www.mesdocumentsinterfaces.org/XML_login_file.xml').text)).getroot()
 
     for personne in tree.findall("/repertoire/personne/nom"):
         print(personne.text)
@@ -30,11 +30,12 @@ def LectureXML():
 
 
 def onclick():
-    tree = ET.ElementTree(ET.fromstring(requests.get('http://www.mesdocumentsinterfaces.org/docs/XML_login_file.xml').text)).getroot()
+    tree = ET.ElementTree(ET.fromstring(requests.get('http://www.mesdocumentsinterfaces.org/XML_login_file.xml').text)).getroot()
 
     val=0
     val2=0
     print(text_id.get())
+
 
 
     for personne in tree.findall("personne"):
@@ -49,6 +50,7 @@ def onclick():
             val2=1
 
     if (val2+val)==2 :
+        #showinfo('Chargement en cours','Veillez attendre\njusqu\'à l\'apparition d\'une nouvelle page.')
         trombi.window_trombi()
     else:
         showwarning('Résultat','Mot de passe incorrect.\nVeuillez recommencer !')

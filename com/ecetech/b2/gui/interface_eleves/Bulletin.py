@@ -64,7 +64,7 @@ def window_bulletin(id):
     save=0
 
     # Ouverture et lecture du fichier XML
-    r_bulletins = "http://www.mesdocumentsinterfaces.org/docs/bulletin.xml"
+    r_bulletins = "http://www.mesdocumentsinterfaces.org/bulletin.xml"
     #w_bulletins = "bulletin.xml"
     def xml_read():
         row=1

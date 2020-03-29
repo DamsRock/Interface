@@ -36,7 +36,7 @@ def window_trombi():
     photo = []
 
 
-    mytree = ET.ElementTree(ET.fromstring(requests.get('http://www.mesdocumentsinterfaces.org/docs/img_trombi.xml').text))
+    mytree = ET.ElementTree(ET.fromstring(requests.get('http://www.mesdocumentsinterfaces.org/img_trombi.xml').text))
     myroot = mytree.getroot()
 
 
