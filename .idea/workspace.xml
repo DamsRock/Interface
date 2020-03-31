@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="13e8b89b-f9d6-4c70-ab85-17ca18c241be" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Docs/Git-2.25.1-64-bit.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Docs/interface__cole_profs.png" beforeDir="false" afterPath="$PROJECT_DIR$/Docs/interface__cole_profs.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Docs/interface_eleve.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Docs/page_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Docs/rendu graphique.rp" beforeDir="false" afterPath="$PROJECT_DIR$/Docs/rendu graphique.rp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/com/ecetech/b2/gui/interface_eleves/Bulletin.py" beforeDir="false" afterPath="$PROJECT_DIR$/com/ecetech/b2/gui/interface_eleves/Bulletin.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -306,7 +301,7 @@
     </state>
     <state x="739" y="262" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1582879913992" />
     <state x="739" y="262" key="FileChooserDialogImpl/1920.875.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1584530490062" />
-    <state width="1899" height="341" key="GridCell.Tab.0.bottom" timestamp="1585674292948">
+    <state width="1899" height="341" key="GridCell.Tab.0.bottom" timestamp="1585677238282">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="291" key="GridCell.Tab.0.bottom/0.0.1920.1040/0.1080.1280.720@0.0.1920.1040" timestamp="1583483885348" />
@@ -314,8 +309,8 @@
     <state width="1899" height="341" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1585507520769" />
     <state width="1899" height="298" key="GridCell.Tab.0.bottom/1920.-201.1920.1040/0.-1080.1920.1080/0.0.1920.1040@0.-1080.1920.1080" timestamp="1584886438813" />
     <state width="1899" height="341" key="GridCell.Tab.0.bottom/1920.-201.1920.1040/0.-1080.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1585301056394" />
-    <state width="1899" height="341" key="GridCell.Tab.0.bottom/1920.875.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1585674292948" />
-    <state width="1899" height="341" key="GridCell.Tab.0.center" timestamp="1585674292948">
+    <state width="1899" height="341" key="GridCell.Tab.0.bottom/1920.875.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1585677238282" />
+    <state width="1899" height="341" key="GridCell.Tab.0.center" timestamp="1585677238282">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="291" key="GridCell.Tab.0.center/0.0.1920.1040/0.1080.1280.720@0.0.1920.1040" timestamp="1583483885348" />
@@ -323,8 +318,8 @@
     <state width="1899" height="341" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1585507520769" />
     <state width="1899" height="298" key="GridCell.Tab.0.center/1920.-201.1920.1040/0.-1080.1920.1080/0.0.1920.1040@0.-1080.1920.1080" timestamp="1584886438813" />
     <state width="1899" height="341" key="GridCell.Tab.0.center/1920.-201.1920.1040/0.-1080.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1585301056394" />
-    <state width="1899" height="341" key="GridCell.Tab.0.center/1920.875.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1585674292948" />
-    <state width="1899" height="341" key="GridCell.Tab.0.left" timestamp="1585674292948">
+    <state width="1899" height="341" key="GridCell.Tab.0.center/1920.875.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1585677238282" />
+    <state width="1899" height="341" key="GridCell.Tab.0.left" timestamp="1585677238282">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="291" key="GridCell.Tab.0.left/0.0.1920.1040/0.1080.1280.720@0.0.1920.1040" timestamp="1583483885348" />
@@ -332,8 +327,8 @@
     <state width="1899" height="341" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1585507520768" />
     <state width="1899" height="298" key="GridCell.Tab.0.left/1920.-201.1920.1040/0.-1080.1920.1080/0.0.1920.1040@0.-1080.1920.1080" timestamp="1584886438813" />
     <state width="1899" height="341" key="GridCell.Tab.0.left/1920.-201.1920.1040/0.-1080.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1585301056394" />
-    <state width="1899" height="341" key="GridCell.Tab.0.left/1920.875.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1585674292948" />
-    <state width="1899" height="341" key="GridCell.Tab.0.right" timestamp="1585674292948">
+    <state width="1899" height="341" key="GridCell.Tab.0.left/1920.875.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1585677238282" />
+    <state width="1899" height="341" key="GridCell.Tab.0.right" timestamp="1585677238282">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="291" key="GridCell.Tab.0.right/0.0.1920.1040/0.1080.1280.720@0.0.1920.1040" timestamp="1583483885348" />
@@ -341,7 +336,7 @@
     <state width="1899" height="341" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1585507520769" />
     <state width="1899" height="298" key="GridCell.Tab.0.right/1920.-201.1920.1040/0.-1080.1920.1080/0.0.1920.1040@0.-1080.1920.1080" timestamp="1584886438813" />
     <state width="1899" height="341" key="GridCell.Tab.0.right/1920.-201.1920.1040/0.-1080.1920.1080/0.0.1920.1040@0.0.1920.1040" timestamp="1585301056394" />
-    <state width="1899" height="341" key="GridCell.Tab.0.right/1920.875.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1585674292948" />
+    <state width="1899" height="341" key="GridCell.Tab.0.right/1920.875.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1585677238282" />
     <state x="461" y="162" key="SettingsEditor" timestamp="1585295162598">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
