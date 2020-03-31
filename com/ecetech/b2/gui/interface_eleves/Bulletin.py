@@ -211,5 +211,4 @@ def window_bulletin(id):
     xml_read()
     wind.mainloop()
 
-###
-window_bulletin('DD')
+###window_bulletin('DD')
