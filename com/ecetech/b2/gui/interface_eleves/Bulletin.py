@@ -145,8 +145,18 @@ def window_bulletin(id):
             pdf.setFont('Helvetica', 14)
             pdf.setFillColor(colors.black)
 
+            #Remplissage du pdf
             pdf.drawString(2*cm,27*cm,'Bulletin de semestre')
             pdf.drawString(2*cm,27.5*cm, nom+' '+prenom)
+            pdf.drawString(1.6*cm,25*cm,'Matière')
+            pdf.line(3.7*cm,26*cm,3.7*cm,10*cm)
+            pdf.drawString(3.9*cm,25*cm, 'Coeff')
+            pdf.line(5.35*cm,26*cm,5.35*cm,10*cm)
+            pdf.drawString(5.65*cm,25*cm, 'Moyenne élèves')
+            pdf.line(9.55*cm,26*cm,9.55*cm,10*cm)
+            pdf.drawString()
+            pdf.drawString(19*cm,25*cm, 'ECTS')
+
 
 
             pdf.setFillColor(colors.blue)
@@ -170,4 +180,5 @@ def window_bulletin(id):
     xml_read()
     wind.mainloop()
 
-###window_bulletin('DD')
+###
+window_bulletin('DD')
