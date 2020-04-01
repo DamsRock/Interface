@@ -1,0 +1,19 @@
+<data>
+    <personne type="user">
+        <nom>AOUAT</nom>
+        <prenom>Antoine</prenom>
+        <motdepasse>NolanC_2015</motdepasse>
+    </personne>
+
+    <personne type="admin">
+        <nom>DAGORNE</nom>
+        <prenom>Damien</prenom>
+        <motdepasse>Franchement_bon</motdepasse>
+    </personne>
+
+    <personne type="user">
+        <nom>DELAROQUE</nom>
+        <prenom>Victor</prenom>
+        <motdepasse>plop_le_drop</motdepasse>
+    </personne>
+<personne><nom>CHRIS</nom><motdepasse>5402</motdepasse></personne></data>
